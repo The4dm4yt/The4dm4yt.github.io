@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hip-Hop History Timeline — Journey through the decades that shaped the culture, from 1973 to the Golden Age." />
+  <title>History Timeline — Golden Era</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="lb-announce" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<!-- NAVBAR -->
+<nav id="main-nav" class="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Golden Era — Home">
+    <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+  </a>
+  <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-right">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="nav-right" class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="history.html" aria-current="page">HISTORY</a></li>
+      <li><a href="artists.html">MUSIC &amp; ARTISTS</a></li>
+      <li class="nav-dropdown">
+        <a href="gallery.html" aria-haspopup="true">GALLERY ▾</a>
+        <ul class="nav-dropdown-menu" role="menu" aria-label="Gallery submenu">
+          <li role="menuitem"><a href="gallery.html">Full Gallery</a></li>
+          <li role="menuitem"><a href="gallery.html#photos">Photos</a></li>
+          <li role="menuitem"><a href="gallery.html#videos">Videos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="artists.html#request" class="nav-cta">REQUEST SONG</a>
+    <button id="btn-theme" class="btn-theme" aria-label="Switch to light mode">
+      <span class="theme-icon">☀️</span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner" aria-labelledby="page-title">
+    <h1 id="page-title" class="page-banner__title" style="color: var(--clr-yellow);">
+      HIP-HOP HISTORY<br>TIMELINE
+    </h1>
+    <p class="page-banner__sub">Journey through the decades that shaped the culture</p>
+    <div class="search-bar" role="search" aria-label="Search timeline">
+      <label for="timeline-search" class="sr-only">Search events, artists, or dates</label>
+      <input id="timeline-search" type="search" placeholder="Search events, artists, or dates…" autocomplete="off" />
+      <button id="timeline-search-btn" class="btn btn-primary" aria-label="Search timeline">SEARCH</button>
+    </div>
+  </div>
+
+  <!-- VIDEO EMBED -->
+  <section class="section" id="video" aria-labelledby="video-heading">
+    <div class="container">
+      <h2 id="video-heading" class="sr-only">Featured Video</h2>
+      <div class="video-block">
+        <!-- wireframe: dark box with play button and label -->
+        <div class="video-embed" role="button" tabindex="0" aria-label="Play: The Birth of Hip-Hop — DJ Kool Herc documentary">
+          <div class="video-embed__play" aria-hidden="true">▶</div>
+          <p class="video-embed__label">[EMBEDDED VIDEO: The Birth of Hip-Hop — DJ Kool Herc]</p>
+        </div>
+        <p class="video-meta" aria-label="Video options">
+          Transcript available below · Closed captions enabled
+        </p>
+        <!-- wireframe: yellow transcript toggle -->
+        <button id="transcript-toggle" class="transcript-toggle" aria-expanded="false" aria-controls="transcript-body">
+          ▸ Full video transcript for accessibility
+        </button>
+        <div id="transcript-body" class="transcript-body" hidden>
+          <p>
+            This documentary explores the origins of hip-hop in the South Bronx during the 1970s. We trace the movement from DJ Kool Herc's legendary block parties at 1520 Sedgwick Avenue — widely considered the birthplace of hip-hop — through the innovations of Grandmaster Flash, the emergence of MCing, b-boying, and graffiti art as a unified cultural expression. The film features interviews with pioneers and archival footage spanning 1973 through the Golden Age of the late 1980s.
+          </p>
+          <p>
+            Chapter 1 (0:00–8:40): The Bronx in the early 1970s — social context, community, and the first block parties.<br>
+            Chapter 2 (8:41–18:20): DJ Kool Herc's technique — the "Merry-Go-Round" and the birth of the breakbeat.<br>
+            Chapter 3 (18:21–28:55): Grandmaster Flash and the science of DJing.<br>
+            Chapter 4 (28:56–38:10): Afrika Bambaataa and the Universal Zulu Nation.<br>
+            Chapter 5 (38:11–45:00): The four elements and hip-hop's global spread.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" id="timeline-section" aria-labelledby="timeline-heading">
+    <div class="container">
+      <h2 id="timeline-heading" class="sr-only">Hip-Hop History Timeline</h2>
+
+      <div class="timeline" aria-label="Hip-hop history timeline">
+
+        <!-- 1973 -->
+        <div class="timeline__entry" data-keywords="1973 herc block party bronx sedgwick first birth"
+          aria-label="1973: The First Block Party">
+          <!-- text left -->
+          <div class="tl-text-cell">
+            <div class="timeline__text">
+              <span class="timeline__year">1973</span>
+              <h3>The First Block Party</h3>
+              <p>DJ Kool Herc hosts a back-to-school party at 1520 Sedgwick Avenue in the Bronx, widely considered the birth of hip-hop.</p>
+              <a href="#" class="timeline__read-more">Read more →</a>
+            </div>
+          </div>
+          <!-- dot -->
+          <div class="timeline__dot dot--yellow" aria-hidden="true"></div>
+          <!-- image right -->
+          <div class="tl-right-img">
+            <div class="timeline__img">
+              <img src="../assets/images/1520-sedgwick-avenue.jpg" alt="1520 Sedgwick Avenue, the Bronx — birthplace of hip-hop" loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: 1520 Sedgwick Avenue]</div>'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 1977 -->
+        <div class="timeline__entry" data-keywords="1977 grandmaster flash dj innovates scratch cut mix technique"
+          aria-label="1977: Grandmaster Flash Innovates">
+          <!-- image left -->
+          <div class="tl-left-img">
+            <div class="timeline__img">
+              <img src="../assets/images/grandmaster-flash-equipment.jpg" alt="Grandmaster Flash's DJ equipment" loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Grandmaster Flash equipment]</div>'" />
+            </div>
+          </div>
+          <!-- dot -->
+          <div class="timeline__dot dot--green" aria-hidden="true"></div>
+          <!-- text right -->
+          <div class="tl-text-cell">
+            <div class="timeline__text">
+              <span class="timeline__year">1977</span>
+              <h3>Grandmaster Flash Innovates</h3>
+              <p>Grandmaster Flash perfects cutting, scratching, and mixing techniques that become foundational to DJing worldwide.</p>
+              <a href="#" class="timeline__read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1979 -->
+        <div class="timeline__entry" data-keywords="1979 rappers delight sugarhill gang mainstream first rap single"
+          aria-label="1979: Rapper's Delight Released">
+          <!-- text left -->
+          <div class="tl-text-cell">
+            <div class="timeline__text">
+              <span class="timeline__year">1979</span>
+              <h3>"Rapper's Delight" Released</h3>
+              <p>The Sugarhill Gang releases the first commercially successful rap single, bringing hip-hop to mainstream audiences for the first time.</p>
+              <a href="#" class="timeline__read-more">Read more →</a>
+            </div>
+          </div>
+          <!-- dot -->
+          <div class="timeline__dot dot--pink" aria-hidden="true"></div>
+          <!-- image right -->
+          <div class="tl-right-img">
+            <div class="timeline__img">
+              <img src="../assets/images/rappers-delight-vinyl.jpg" alt="Rapper's Delight 12-inch vinyl single by the Sugarhill Gang" loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Rapper\'s Delight vinyl]</div>'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 1986 -->
+        <div class="timeline__entry" data-keywords="1986 run dmc raising hell platinum album mainstream rock"
+          aria-label="1986: Run-DMC Goes Platinum">
+          <!-- image left -->
+          <div class="tl-left-img">
+            <div class="timeline__img">
+              <img src="../assets/images/run-dmc-performing.jpg" alt="Run-DMC performing on stage" loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Run-DMC performing]</div>'" />
+            </div>
+          </div>
+          <!-- dot -->
+          <div class="timeline__dot dot--yellow" aria-hidden="true"></div>
+          <!-- text right -->
+          <div class="tl-text-cell">
+            <div class="timeline__text">
+              <span class="timeline__year">1986</span>
+              <h3>Run-DMC Goes Platinum</h3>
+              <p>"Raising Hell" becomes the first platinum hip-hop album, proving rap's commercial viability and opening mainstream doors.</p>
+              <a href="#" class="timeline__read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1988 -->
+        <div class="timeline__entry" data-keywords="1988 public enemy nwa golden age political conscious west coast"
+          aria-label="1988: Golden Age Begins">
+          <!-- text left -->
+          <div class="tl-text-cell">
+            <div class="timeline__text">
+              <span class="timeline__year">1988</span>
+              <h3>Golden Age Begins</h3>
+              <p>Public Enemy, N.W.A, and other groups usher in hip-hop's Golden Age with politically charged, innovative music from both coasts.</p>
+              <a href="#" class="timeline__read-more">Read more →</a>
+            </div>
+          </div>
+          <!-- dot -->
+          <div class="timeline__dot dot--green" aria-hidden="true"></div>
+          <!-- image right -->
+          <div class="tl-right-img">
+            <div class="timeline__img">
+              <img src="../assets/images/public-enemy-album.jpg" alt="Public Enemy — It Takes a Nation of Millions to Hold Us Back album cover" loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Public Enemy album cover]</div>'" />
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- EXTERNAL RESOURCES -->
+  <section class="section section--alt" aria-labelledby="resources-heading">
+    <div class="container">
+      <h2 id="resources-heading" class="section-heading">EXTERNAL RESOURCES</h2>
+
+      <div class="resources-grid">
+        <a href="https://www.hiphoparchive.org" target="_blank" rel="noopener noreferrer" class="resource-card"
+          aria-label="Hip-Hop Archive — Archival research collection (opens in new tab)">
+          <div class="resource-card__icon" aria-hidden="true">🏛</div>
+          <h3>Hip-Hop Archive</h3>
+          <p>Archival research collection</p>
+        </a>
+        <a href="https://www.rockhall.com" target="_blank" rel="noopener noreferrer" class="resource-card"
+          aria-label="Rock & Roll Hall of Fame — Hip-hop artists and history (opens in new tab)">
+          <div class="resource-card__icon resource-card__icon--alt" aria-hidden="true">🎸</div>
+          <h3>Rock &amp; Roll Hall of Fame</h3>
+          <p>Hip-hop artists and history</p>
+        </a>
+        <a href="https://americanhistory.si.edu" target="_blank" rel="noopener noreferrer" class="resource-card"
+          aria-label="Smithsonian Museum — Hip-hop culture collection (opens in new tab)">
+          <div class="resource-card__icon" aria-hidden="true">🏛</div>
+          <h3>Smithsonian Museum</h3>
+          <p>Hip-hop culture collection</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button id="lb-close" class="lightbox__close" aria-label="Close image viewer">✕</button>
+  <button id="lb-prev" class="lightbox__nav lightbox__prev" aria-label="Previous image">‹</button>
+  <img id="lb-img" class="lightbox__img" src="" alt="" />
+  <p id="lb-caption" class="lightbox__caption"></p>
+  <button id="lb-next" class="lightbox__nav lightbox__next" aria-label="Next image">›</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Site footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Golden Era — Home">
+        <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+      </a>
+      <p>Preserving and celebrating hip-hop culture, history, and the artists that made it.</p>
+      <nav class="footer__social" aria-label="Social media links">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="Facebook">𝔽</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">EXPLORE</h3>
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History Timeline</a></li>
+        <li><a href="artists.html">Music &amp; Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html#videos">Videos</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">LEARN</h3>
+      <ul role="list">
+        <li><a href="index.html#what">What is Hip-Hop?</a></li>
+        <li><a href="index.html#what">The Four Elements</a></li>
+        <li><a href="artists.html">Key Figures</a></li>
+        <li><a href="history.html">Cultural Impact</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">CONNECT</h3>
+      <ul role="list">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Submit Content</a></li>
+        <li><a href="artists.html#request">Request Songs</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p>© 2025 Golden Era. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> · <a href="#">Accessibility</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

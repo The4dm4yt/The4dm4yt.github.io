@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Golden Era — Discover the roots, culture, and legends of early hip-hop from the streets of the Bronx to the world." />
+  <title>Golden Era — Early Hip-Hop Heritage</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ARIA LIVE for announcements -->
+<div id="lb-announce" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ── NAVBAR ── -->
+<nav id="main-nav" class="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Golden Era — Home">
+    <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+  </a>
+
+  <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-right">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div id="nav-right" class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" aria-current="page">HOME</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="artists.html">MUSIC &amp; ARTISTS</a></li>
+      <li class="nav-dropdown">
+        <a href="gallery.html" aria-haspopup="true">GALLERY ▾</a>
+        <ul class="nav-dropdown-menu" role="menu" aria-label="Gallery submenu">
+          <li role="menuitem"><a href="gallery.html">Full Gallery</a></li>
+          <li role="menuitem"><a href="gallery.html#photos">Photos</a></li>
+          <li role="menuitem"><a href="gallery.html#videos">Videos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="artists.html#request" class="nav-cta">REQUEST SONG</a>
+    <button id="btn-theme" class="btn-theme" aria-label="Switch to light mode">
+      <span class="theme-icon">☀️</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MAIN ── -->
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <p class="sr-only">Preserving and celebrating the culture</p>
+        <h1 id="hero-heading" class="hero__title">
+          WELCOME TO THE<br>
+          <span class="accent">GOLDEN ERA</span>
+        </h1>
+        <p class="hero__sub">
+          Discover the roots, culture, and legends of early hip-hop from the streets of the Bronx to the world — music, records, graffiti, b-boying.
+        </p>
+        <div class="hero__cta">
+          <a href="history.html" class="btn btn-primary">START LEARNING</a>
+          <a href="history.html#video" class="btn btn-ghost">WATCH VIDEO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS HIP-HOP -->
+  <section class="section accordion-section" id="what" aria-labelledby="what-heading">
+    <div class="container">
+      <h2 id="what-heading" class="section-heading">WHAT IS HIP-HOP?</h2>
+      <p class="section-sub">Click each section to learn more about the culture</p>
+
+      <div class="accordion" role="list">
+
+        <div class="accordion__item is-open" role="listitem">
+          <button class="accordion__trigger" aria-expanded="true" aria-controls="acc-panel-1" id="acc-btn-1">
+            <span class="accordion__plus" aria-hidden="true">+</span>
+            The Birth of Hip-Hop
+            <span class="accordion__chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-btn-1">
+            <div class="accordion__panel-inner">
+              <p>Hip-hop emerged in the 1970s in the South Bronx, New York City. It was born from block parties where DJs would isolate and extend the percussion breaks of funk, soul, and disco songs. DJ Kool Herc is widely credited as the founding father, pioneering the "Merry-Go-Round" technique using two turntables to loop the break — a sound and approach that became the DNA of an entire culture.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-2" id="acc-btn-2">
+            <span class="accordion__plus" aria-hidden="true">+</span>
+            The Four Elements of Hip-Hop
+            <span class="accordion__chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" id="acc-panel-2" role="region" aria-labelledby="acc-btn-2">
+            <div class="accordion__panel-inner">
+              <p>Afrika Bambaataa codified hip-hop culture around four core elements: MCing (rapping), DJing, breakdancing (b-boying), and graffiti art. These four pillars work together to form the complete cultural expression — each influencing and amplifying the others into a unified movement that spread from the Bronx to every corner of the globe.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-3" id="acc-btn-3">
+            <span class="accordion__plus" aria-hidden="true">+</span>
+            MCing (Rapping)
+            <span class="accordion__chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" id="acc-panel-3" role="region" aria-labelledby="acc-btn-3">
+            <div class="accordion__panel-inner">
+              <p>MCing began as the DJ's hype partner, keeping the crowd energised at block parties. It rapidly evolved into a sophisticated art form — storytelling, battle rhymes, social commentary, and lyrical poetry. From Coke La Rock to Rakim to the complex internal rhyme schemes that followed, the MC became the voice of a generation and the most recognisable face of hip-hop culture.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-4" id="acc-btn-4">
+            <span class="accordion__plus" aria-hidden="true">+</span>
+            DJing
+            <span class="accordion__chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" id="acc-panel-4" role="region" aria-labelledby="acc-btn-4">
+            <div class="accordion__panel-inner">
+              <p>The DJ is the architect of hip-hop sound. Techniques like scratching, cutting, beat juggling, and the backspin were pioneered by Grandmaster Flash, DJ Grand Wizzard Theodore, and Afrika Bambaataa — transforming turntables from playback devices into musical instruments capable of producing entirely new sounds and keeping crowds in a perpetual state of motion.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-5" id="acc-btn-5">
+            <span class="accordion__plus" aria-hidden="true">+</span>
+            Breakdancing (B-boying)
+            <span class="accordion__chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" id="acc-panel-5" role="region" aria-labelledby="acc-btn-5">
+            <div class="accordion__panel-inner">
+              <p>B-boying emerged at DJ Kool Herc's parties — dancers responded physically to the break section of records. It evolved into a sophisticated athletic art form comprising top rock, footwork, freezes, and power moves. Crews like Rock Steady Crew and Dynamic Rockers turned b-boying into a competitive discipline that is now recognised as an Olympic sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-6" id="acc-btn-6">
+            <span class="accordion__plus" aria-hidden="true">+</span>
+            Graffiti Art
+            <span class="accordion__chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" id="acc-panel-6" role="region" aria-labelledby="acc-btn-6">
+            <div class="accordion__panel-inner">
+              <p>Graffiti writers transformed the urban landscape into a canvas, developing a rich visual language from simple tags to elaborate wildstyle masterpieces. NYC subway cars became rolling galleries visible to millions. Writers like TAKI 183, Phase 2, Lee Quiñones, and Lady Pink elevated street writing into a globally recognised art movement — now displayed in galleries and museums worldwide.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="section" id="gallery-preview" aria-labelledby="gallery-preview-heading">
+    <div class="container">
+      <h2 id="gallery-preview-heading" class="section-heading">GALLERY PREVIEW</h2>
+      <p class="section-sub">Click any image to view full size with details</p>
+
+      <div class="gallery-grid" role="list">
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/dj-kool-herc-block-party.jpg"
+          data-alt="DJ Kool Herc at a block party"
+          data-caption="DJ Kool Herc at a Bronx block party, 1973 — the birth of hip-hop">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/dj-kool-herc-block-party.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: DJ Kool Herc at block party]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">DJ Kool Herc at block party</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/bboys-breaking.jpg"
+          data-alt="B-boys breakdancing on a cardboard mat"
+          data-caption="B-boys breaking in the South Bronx, late 1970s">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/bboys-breaking.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: B-boys breaking]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">B-boys breaking</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/graffiti-subway-car.jpg"
+          data-alt="New York City subway car covered in graffiti"
+          data-caption="Graffiti-covered NYC subway car, 1970s — rolling galleries">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/graffiti-subway-car.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Graffiti subway car]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Graffiti subway car</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/turntable-setup.jpg"
+          data-alt="Two Technics 1200 turntables with mixer"
+          data-caption="Technics 1200 turntable setup — the instrument of the DJ">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/turntable-setup.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Turntable setup]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Turntable setup</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/mc-performing.jpg"
+          data-alt="An MC performing at an outdoor event"
+          data-caption="MC performing at a Bronx block party, 1970s">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/mc-performing.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: MC performing]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">MC performing</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/bronx-street-scene.jpg"
+          data-alt="Street scene in the South Bronx"
+          data-caption="South Bronx street scene — the birthplace of hip-hop culture">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/bronx-street-scene.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Bronx street scene]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Bronx street scene</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/boombox.jpg"
+          data-alt="A large portable boombox"
+          data-caption="The boombox — portable sound system of the streets, 1980s">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/boombox.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Boombox]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Boombox</p>
+        </article>
+
+        <article class="gallery-card" role="listitem"
+          data-img="../assets/images/graffiti-artist.jpg"
+          data-alt="A graffiti artist painting a mural"
+          data-caption="Graffiti artist at work — wildstyle lettering, New York City">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/graffiti-artist.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Graffiti artist]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Graffiti artist</p>
+        </article>
+
+      </div>
+
+      <div class="center mt-lg">
+        <a href="gallery.html" class="btn btn-primary">VIEW FULL GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVE DEEPER CTA -->
+  <section class="dive-cta" aria-labelledby="dive-heading">
+    <div class="container">
+      <h2 id="dive-heading" class="dive-cta__title">READY TO DIVE DEEPER?</h2>
+      <p class="dive-cta__sub">Explore the complete timeline, discover legendary artists, and immerse yourself in the culture that changed music forever</p>
+      <div class="dive-cta__btns">
+        <a href="history.html" class="btn btn-primary">EXPLORE HISTORY</a>
+        <a href="artists.html" class="btn btn-secondary">DISCOVER ARTISTS</a>
+        <a href="history.html#video" class="btn btn-ghost">WATCH VIDEOS</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── LIGHTBOX ── -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button id="lb-close" class="lightbox__close" aria-label="Close image viewer">✕</button>
+  <button id="lb-prev" class="lightbox__nav lightbox__prev" aria-label="Previous image">‹</button>
+  <img id="lb-img" class="lightbox__img" src="" alt="" />
+  <p id="lb-caption" class="lightbox__caption"></p>
+  <button id="lb-next" class="lightbox__nav lightbox__next" aria-label="Next image">›</button>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer" aria-label="Site footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Golden Era — Home">
+        <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+      </a>
+      <p>Preserving and celebrating hip-hop culture, history, and the artists that made it.</p>
+      <nav class="footer__social" aria-label="Social media links">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="Facebook">𝔽</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">EXPLORE</h3>
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History Timeline</a></li>
+        <li><a href="artists.html">Music &amp; Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html#videos">Videos</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">LEARN</h3>
+      <ul role="list">
+        <li><a href="index.html#what">What is Hip-Hop?</a></li>
+        <li><a href="index.html#what">The Four Elements</a></li>
+        <li><a href="artists.html">Key Figures</a></li>
+        <li><a href="history.html">Cultural Impact</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">CONNECT</h3>
+      <ul role="list">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Submit Content</a></li>
+        <li><a href="artists.html#request">Request Songs</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p>© 2025 Golden Era. All rights reserved. Preserving and celebrating hip-hop culture.</p>
+    <p><a href="#">Privacy Policy</a> · <a href="#">Accessibility</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

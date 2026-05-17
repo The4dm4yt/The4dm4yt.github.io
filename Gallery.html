@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery — Photos, videos, and archives from the golden era of hip-hop." />
+  <title>Gallery — Golden Era</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="lb-announce" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<!-- NAVBAR -->
+<nav id="main-nav" class="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Golden Era — Home">
+    <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+  </a>
+  <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-right">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="nav-right" class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="artists.html">MUSIC &amp; ARTISTS</a></li>
+      <li class="nav-dropdown">
+        <a href="gallery.html" aria-current="page" aria-haspopup="true">GALLERY ▾</a>
+        <ul class="nav-dropdown-menu" role="menu" aria-label="Gallery submenu">
+          <li role="menuitem"><a href="gallery.html">Full Gallery</a></li>
+          <li role="menuitem"><a href="#photos">Photos</a></li>
+          <li role="menuitem"><a href="#videos">Videos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="artists.html#request" class="nav-cta">REQUEST SONG</a>
+    <button id="btn-theme" class="btn-theme" aria-label="Switch to light mode">
+      <span class="theme-icon">☀️</span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner" aria-labelledby="page-title">
+    <h1 id="page-title" class="page-banner__title" style="color: var(--clr-green);">GALLERY</h1>
+    <p class="page-banner__sub">Images, video, and archives from the golden era of hip-hop</p>
+  </div>
+
+  <!-- PHOTOS SECTION -->
+  <section class="section" id="photos" aria-labelledby="photos-heading">
+    <div class="container">
+      <h2 id="photos-heading" class="section-heading">PHOTOS</h2>
+
+      <!-- FILTERS -->
+      <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+        <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="artists" aria-pressed="false">Artists</button>
+        <button class="filter-btn" data-filter="culture" aria-pressed="false">Culture</button>
+        <button class="filter-btn" data-filter="graffiti" aria-pressed="false">Graffiti</button>
+        <button class="filter-btn" data-filter="music" aria-pressed="false">Music</button>
+      </div>
+
+      <div class="gallery-full-grid" role="list" id="gallery-grid">
+
+        <article class="gallery-card" role="listitem" data-cat="culture"
+          data-img="../assets/images/dj-kool-herc-block-party.jpg"
+          data-alt="DJ Kool Herc at a block party in the Bronx"
+          data-caption="DJ Kool Herc at a Bronx block party, 1973 — the birth of hip-hop">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/dj-kool-herc-block-party.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: DJ Kool Herc at block party]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">DJ Kool Herc at block party</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="culture"
+          data-img="../assets/images/bboys-breaking.jpg"
+          data-alt="B-boys breakdancing on cardboard in the Bronx"
+          data-caption="B-boys breaking in the South Bronx, late 1970s">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/bboys-breaking.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: B-boys breaking]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">B-boys breaking</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="graffiti"
+          data-img="../assets/images/graffiti-subway-car.jpg"
+          data-alt="New York City subway car covered in colourful graffiti"
+          data-caption="Graffiti-covered NYC subway car — rolling galleries of the streets">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/graffiti-subway-car.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Graffiti subway car]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Graffiti subway car</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="music"
+          data-img="../assets/images/turntable-setup.jpg"
+          data-alt="Two Technics 1200 turntables with a DJ mixer"
+          data-caption="Technics 1200 turntable setup — the instrument of the DJ">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/turntable-setup.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Turntable setup]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Turntable setup</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="artists"
+          data-img="../assets/images/artist-grandmaster-flash.jpg"
+          data-alt="Grandmaster Flash behind the decks"
+          data-caption="Grandmaster Flash — pioneer of DJing technique">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/artist-grandmaster-flash.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Grandmaster Flash]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Grandmaster Flash</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="culture"
+          data-img="../assets/images/mc-performing.jpg"
+          data-alt="An MC performing with a microphone at an outdoor event"
+          data-caption="MC performing at a Bronx block party, 1970s">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/mc-performing.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: MC performing]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">MC performing</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="culture"
+          data-img="../assets/images/bronx-street-scene.jpg"
+          data-alt="Street scene in the South Bronx, 1970s"
+          data-caption="South Bronx street scene — birthplace of hip-hop culture">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/bronx-street-scene.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Bronx street scene]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Bronx street scene</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="music"
+          data-img="../assets/images/boombox.jpg"
+          data-alt="A large JVC portable boombox"
+          data-caption="The boombox — portable sound system of the streets, 1980s">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/boombox.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Boombox]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Boombox</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="graffiti"
+          data-img="../assets/images/graffiti-artist.jpg"
+          data-alt="A graffiti artist spray-painting a wildstyle mural"
+          data-caption="Graffiti artist at work — wildstyle lettering, New York City">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/graffiti-artist.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Graffiti artist]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Graffiti artist</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="artists"
+          data-img="../assets/images/artist-run-dmc.jpg"
+          data-alt="Run-DMC performing on stage"
+          data-caption="Run-DMC — Kings of Rock, 1986">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/artist-run-dmc.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Run-DMC]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Run-DMC, 1986</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="artists"
+          data-img="../assets/images/artist-public-enemy.jpg"
+          data-alt="Public Enemy performing live"
+          data-caption="Public Enemy — It Takes a Nation, 1988">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/artist-public-enemy.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Public Enemy]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Public Enemy</p>
+        </article>
+
+        <article class="gallery-card" role="listitem" data-cat="artists"
+          data-img="../assets/images/artist-rakim.jpg"
+          data-alt="Rakim performing live"
+          data-caption="Rakim — The God MC">
+          <div class="gallery-card__img" aria-hidden="true">
+            <img src="../assets/images/artist-rakim.jpg" alt="" loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>[IMAGE: Rakim]</div>'" />
+            <div class="gallery-card__overlay"><span class="gallery-card__overlay-text">VIEW</span></div>
+          </div>
+          <p class="gallery-card__caption">Rakim</p>
+        </article>
+
+      </div><!-- /gallery-full-grid -->
+    </div>
+  </section>
+
+  <!-- VIDEOS SECTION -->
+  <section class="section section--alt" id="videos" aria-labelledby="videos-heading">
+    <div class="container">
+      <h2 id="videos-heading" class="section-heading">VIDEOS</h2>
+      <p class="section-sub">Documentaries, performances, and cultural archives</p>
+
+      <div class="video-grid">
+        <div class="video-card" tabindex="0" role="button" aria-label="Play: The Birth of Hip-Hop documentary, 45 minutes">
+          <div class="video-thumb">
+            <div class="play-icon" aria-hidden="true">▶</div>
+          </div>
+          <h3>The Birth of Hip-Hop</h3>
+          <span>Documentary · 45 min</span>
+        </div>
+        <div class="video-card" tabindex="0" role="button" aria-label="Play: Grandmaster Flash Live performance, 12 minutes">
+          <div class="video-thumb">
+            <div class="play-icon" aria-hidden="true">▶</div>
+          </div>
+          <h3>Grandmaster Flash Live</h3>
+          <span>Performance · 12 min</span>
+        </div>
+        <div class="video-card" tabindex="0" role="button" aria-label="Play: B-Boy Battle NYC, 22 minutes">
+          <div class="video-thumb">
+            <div class="play-icon" aria-hidden="true">▶</div>
+          </div>
+          <h3>B-Boy Battle NYC</h3>
+          <span>Competition · 22 min</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button id="lb-close" class="lightbox__close" aria-label="Close image viewer">✕</button>
+  <button id="lb-prev" class="lightbox__nav lightbox__prev" aria-label="Previous image">‹</button>
+  <img id="lb-img" class="lightbox__img" src="" alt="" />
+  <p id="lb-caption" class="lightbox__caption"></p>
+  <button id="lb-next" class="lightbox__nav lightbox__next" aria-label="Next image">›</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Site footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Golden Era — Home">
+        <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+      </a>
+      <p>Preserving and celebrating hip-hop culture, history, and the artists that made it.</p>
+      <nav class="footer__social" aria-label="Social media links">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="Facebook">𝔽</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">EXPLORE</h3>
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History Timeline</a></li>
+        <li><a href="artists.html">Music &amp; Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">CONNECT</h3>
+      <ul role="list">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Submit Content</a></li>
+        <li><a href="artists.html#request">Request Songs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p>© 2025 Golden Era. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> · <a href="#">Accessibility</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

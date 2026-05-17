@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Music & Artists — Explore the pioneers and legends of early hip-hop." />
+  <title>Music &amp; Artists — Golden Era</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="lb-announce" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<!-- NAVBAR -->
+<nav id="main-nav" class="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Golden Era — Home">
+    <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+  </a>
+  <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-right">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="nav-right" class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="artists.html" aria-current="page">MUSIC &amp; ARTISTS</a></li>
+      <li class="nav-dropdown">
+        <a href="gallery.html" aria-haspopup="true">GALLERY ▾</a>
+        <ul class="nav-dropdown-menu" role="menu" aria-label="Gallery submenu">
+          <li role="menuitem"><a href="gallery.html">Full Gallery</a></li>
+          <li role="menuitem"><a href="gallery.html#photos">Photos</a></li>
+          <li role="menuitem"><a href="gallery.html#videos">Videos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#request" class="nav-cta">REQUEST SONG</a>
+    <button id="btn-theme" class="btn-theme" aria-label="Switch to light mode">
+      <span class="theme-icon">☀️</span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner" aria-labelledby="page-title">
+    <h1 id="page-title" class="page-banner__title" style="color: var(--clr-pink);">MUSIC &amp; ARTISTS</h1>
+    <p class="page-banner__sub">Explore the pioneers and legends of early hip-hop</p>
+    <div class="search-bar" role="search" aria-label="Search artists">
+      <label for="artist-search" class="sr-only">Search artists</label>
+      <input id="artist-search" type="search" placeholder="Search artists…" autocomplete="off" />
+      <button id="artist-search-btn" class="btn btn-primary" aria-label="Search artists">SEARCH</button>
+    </div>
+  </div>
+
+  <!-- ARTIST GRID -->
+  <section class="section" aria-labelledby="artists-heading">
+    <div class="container">
+      <h2 id="artists-heading" class="sr-only">Artist Profiles</h2>
+
+      <div class="artists-grid" role="list">
+
+        <article class="artist-card" role="listitem" data-keywords="dj kool herc father hip-hop dj bronx">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-dj-kool-herc.jpg" alt="DJ Kool Herc" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: DJ Kool Herc]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>DJ Kool Herc</h3>
+            <span class="artist-card__role">The Father of Hip-Hop</span>
+            <p>Pioneered the breakbeat technique and hosted the first hip-hop party in 1973.</p>
+            <button class="btn-view" data-artist="herc" aria-label="View DJ Kool Herc profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="grandmaster flash dj innovator scratch cut mix">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-grandmaster-flash.jpg" alt="Grandmaster Flash" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: Grandmaster Flash]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>Grandmaster Flash</h3>
+            <span class="artist-card__role">DJ Innovator</span>
+            <p>Revolutionised DJing with cutting, scratching, and mixing techniques.</p>
+            <button class="btn-view" data-artist="flash" aria-label="View Grandmaster Flash profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="afrika bambaataa godfather zulu nation four elements producer">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-afrika-bambaataa.jpg" alt="Afrika Bambaataa" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: Afrika Bambaataa]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>Afrika Bambaataa</h3>
+            <span class="artist-card__role">The Godfather</span>
+            <p>Founded the Zulu Nation and defined hip-hop's four core elements.</p>
+            <button class="btn-view" data-artist="bambaataa" aria-label="View Afrika Bambaataa profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="run dmc kings rock platinum mainstream aerosmith">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-run-dmc.jpg" alt="Run-DMC" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: Run-DMC]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>Run-DMC</h3>
+            <span class="artist-card__role">Kings of Rock</span>
+            <p>First hip-hop group to achieve mainstream success and platinum status.</p>
+            <button class="btn-view" data-artist="rundmc" aria-label="View Run-DMC profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="public enemy political missionaries chuck d bomb squad conscious">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-public-enemy.jpg" alt="Public Enemy" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: Public Enemy]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>Public Enemy</h3>
+            <span class="artist-card__role">Political Missionaries</span>
+            <p>Brought political consciousness and activism to hip-hop music.</p>
+            <button class="btn-view" data-artist="pe" aria-label="View Public Enemy profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="nwa gangsta rap pioneers compton dre ice cube eazy-e">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-nwa.jpg" alt="N.W.A" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: N.W.A]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>N.W.A</h3>
+            <span class="artist-card__role">Gangsta Rap Pioneers</span>
+            <p>Revolutionised rap with raw, unfiltered street narratives from Compton.</p>
+            <button class="btn-view" data-artist="nwa" aria-label="View N.W.A profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="ll cool j ladies love def jam solo mainstream">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-ll-cool-j.jpg" alt="LL Cool J" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: LL Cool J]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>LL Cool J</h3>
+            <span class="artist-card__role">Ladies Love Cool James</span>
+            <p>First solo rap artist to achieve commercial mainstream breakthrough.</p>
+            <button class="btn-view" data-artist="llcoolj" aria-label="View LL Cool J profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+        <article class="artist-card" role="listitem" data-keywords="rakim god mc lyricist eric b paid in full lyricism">
+          <div class="artist-card__photo">
+            <img src="../assets/images/artist-rakim.jpg" alt="Rakim" loading="lazy"
+              onerror="this.src='';this.alt='';this.parentElement.innerHTML='<div class=img-placeholder>[ARTIST PHOTO: Rakim]</div>'" />
+          </div>
+          <div class="artist-card__body">
+            <h3>Rakim</h3>
+            <span class="artist-card__role">The God MC</span>
+            <p>Transformed rap lyricism with complex rhyme schemes and platinum delivery.</p>
+            <button class="btn-view" data-artist="rakim" aria-label="View Rakim profile">VIEW PROFILE</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC PLAYER -->
+  <section class="section player-section" id="player" aria-labelledby="player-heading">
+    <div class="container">
+      <h2 id="player-heading" class="player-heading">MUSIC PLAYER</h2>
+
+      <div class="player-card" role="region" aria-label="Music player">
+        <div class="player-top">
+          <div class="player-art" aria-hidden="true">
+            <img id="player-art" src="../assets/images/rappers-delight.jpg" alt="Rapper's Delight album art" loading="lazy"
+              onerror="this.src='';this.parentElement.innerHTML='<div class=img-placeholder style=\"min-height:72px\">🎵</div>'" />
+          </div>
+          <div class="player-track">
+            <h4 id="player-track-name">Rapper's Delight</h4>
+            <p id="player-artist-name">The Sugarhill Gang</p>
+          </div>
+        </div>
+
+        <div class="player-progress" role="group" aria-label="Track progress">
+          <span id="player-current" class="player-time" aria-live="off">0:00</span>
+          <div id="player-track" class="progress-track" role="slider"
+            aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+            <div id="player-fill" class="progress-fill" style="width:0%"></div>
+          </div>
+          <span id="player-total" class="player-time">6:30</span>
+        </div>
+
+        <div class="player-controls" role="group" aria-label="Playback controls">
+          <button id="player-prev" class="ctrl-btn" aria-label="Previous track">⏮</button>
+          <button id="player-play" class="ctrl-btn ctrl-btn--play" aria-label="Play">▶</button>
+          <button id="player-next" class="ctrl-btn" aria-label="Next track">⏭</button>
+        </div>
+
+        <p id="player-desc" class="player-audio-desc" aria-live="polite">
+          <strong>Audio Description:</strong> Classic hip-hop track with funky bassline and call-and-response vocals. 1979.
+        </p>
+      </div>
+
+      <!-- PLAYLIST -->
+      <ol class="playlist" aria-label="Playlist" role="listbox" aria-activedescendant="pl-item-0">
+        <li class="playlist__item is-active" id="pl-item-0" data-track="0" role="option" aria-selected="true" tabindex="0"
+          aria-label="Track 1: Rapper's Delight by The Sugarhill Gang, 6 minutes 30 seconds">
+          <span class="playlist__num" aria-hidden="true">1</span>
+          <div class="playlist__info">
+            <strong>Rapper's Delight</strong>
+            <span>The Sugarhill Gang</span>
+          </div>
+          <span class="playlist__dur" aria-hidden="true">6:30</span>
+        </li>
+        <li class="playlist__item" id="pl-item-1" data-track="1" role="option" aria-selected="false" tabindex="0"
+          aria-label="Track 2: The Message by Grandmaster Flash, 7 minutes 11 seconds">
+          <span class="playlist__num" aria-hidden="true">2</span>
+          <div class="playlist__info">
+            <strong>The Message</strong>
+            <span>Grandmaster Flash</span>
+          </div>
+          <span class="playlist__dur" aria-hidden="true">7:11</span>
+        </li>
+        <li class="playlist__item" id="pl-item-2" data-track="2" role="option" aria-selected="false" tabindex="0"
+          aria-label="Track 3: Planet Rock by Afrika Bambaataa, 4 minutes 57 seconds">
+          <span class="playlist__num" aria-hidden="true">3</span>
+          <div class="playlist__info">
+            <strong>Planet Rock</strong>
+            <span>Afrika Bambaataa</span>
+          </div>
+          <span class="playlist__dur" aria-hidden="true">4:57</span>
+        </li>
+        <li class="playlist__item" id="pl-item-3" data-track="3" role="option" aria-selected="false" tabindex="0"
+          aria-label="Track 4: Walk This Way by Run-DMC featuring Aerosmith, 5 minutes 10 seconds">
+          <span class="playlist__num" aria-hidden="true">4</span>
+          <div class="playlist__info">
+            <strong>Walk This Way</strong>
+            <span>Run-DMC ft. Aerosmith</span>
+          </div>
+          <span class="playlist__dur" aria-hidden="true">5:10</span>
+        </li>
+        <li class="playlist__item" id="pl-item-4" data-track="4" role="option" aria-selected="false" tabindex="0"
+          aria-label="Track 5: Fight the Power by Public Enemy, 4 minutes 42 seconds">
+          <span class="playlist__num" aria-hidden="true">5</span>
+          <div class="playlist__info">
+            <strong>Fight the Power</strong>
+            <span>Public Enemy</span>
+          </div>
+          <span class="playlist__dur" aria-hidden="true">4:42</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- REQUEST FORM -->
+  <section class="section request-section" id="request" aria-labelledby="request-heading">
+    <div class="container">
+      <h2 id="request-heading" class="section-heading">REQUEST A SONG OR ARTIST</h2>
+      <p class="section-sub">Can't find what you're looking for? Let us know and we'll add it to our collection!</p>
+
+      <form id="request-form" class="request-form" novalidate aria-label="Song or artist request form">
+        <div class="form-row">
+          <div class="form-group" id="fg-name">
+            <label for="req-name">Your Name <span class="req" aria-hidden="true">*</span></label>
+            <input id="req-name" type="text" name="name" placeholder="Enter your name" required autocomplete="name" aria-required="true" aria-describedby="err-name" />
+            <span id="err-name" class="field-error" role="alert">Please enter your name.</span>
+          </div>
+          <div class="form-group" id="fg-email">
+            <label for="req-email">Email Address <span class="req" aria-hidden="true">*</span></label>
+            <input id="req-email" type="email" name="email" placeholder="your.email@example.com" required autocomplete="email" aria-required="true" aria-describedby="err-email" />
+            <span id="err-email" class="field-error" role="alert">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="req-artist">Artist Name</label>
+          <input id="req-artist" type="text" name="artist" placeholder="Enter artist name" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="req-song">Song Title <span style="color:var(--txt-muted);font-weight:400">(Optional)</span></label>
+          <input id="req-song" type="text" name="song" placeholder="Enter song title" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="req-info">Additional Information</label>
+          <textarea id="req-info" name="info" placeholder="Tell us more about your request…" aria-label="Additional information about your request"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">SUBMIT REQUEST</button>
+        <div id="req-success" class="form-success" role="alert" tabindex="-1">
+          ✅ Thank you! Your request has been submitted. We'll review it shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ARTIST MODAL -->
+<div id="artist-modal" class="modal-backdrop" role="dialog" aria-modal="true"
+  aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal">
+    <button id="modal-close" class="modal__close" aria-label="Close artist profile">✕</button>
+    <h2 id="modal-title" class="modal__title"></h2>
+    <span id="modal-role" class="modal__role"></span>
+    <p id="modal-body" class="modal__body"></p>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button id="lb-close" class="lightbox__close" aria-label="Close image viewer">✕</button>
+  <button id="lb-prev" class="lightbox__nav lightbox__prev" aria-label="Previous image">‹</button>
+  <img id="lb-img" class="lightbox__img" src="" alt="" />
+  <p id="lb-caption" class="lightbox__caption"></p>
+  <button id="lb-next" class="lightbox__nav lightbox__next" aria-label="Next image">›</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Site footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Golden Era — Home">
+        <span class="logo-bracket">[</span>GOLDEN ERA<span class="logo-bracket">]</span>
+      </a>
+      <p>Preserving and celebrating hip-hop culture, history, and the artists that made it.</p>
+      <nav class="footer__social" aria-label="Social media links">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="Facebook">𝔽</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">EXPLORE</h3>
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History Timeline</a></li>
+        <li><a href="artists.html">Music &amp; Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col h4">CONNECT</h3>
+      <ul role="list">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Submit Content</a></li>
+        <li><a href="#request">Request Songs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p>© 2025 Golden Era. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> · <a href="#">Accessibility</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
